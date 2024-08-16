@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Profile Page</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="./node_modules/axios/dist/axios.js"></script>
+    </head>
+<body>
+    <div class="navBar">
+        <div class="lift">
+            <img src="./logo.svg" alt="" a="./index.html" >
+            <ul class="ul">
+                <li> <a href="./index.html">Home</a></li>
+                <li style="cursor: pointer;" onclick="clicked()"> <a>Profile</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button onclick="goToLogin()" class="login">Login</button>
+            <button onclick="goToRegister()" class="register">Register</button>
+            <span class="userNameInNav"></span>
+            <button class="logOut">Log Out</button>
+        </div>
+    </div>
+    <div class="userInfo">
+        <p>Need To Login To Show Profile</p>
+    </div>
+    <div class="userPosts">
+        
+    </div>
+    <!-- for Modal -->
+    <div id="myModal" class="modal">
+        <div class="modalContent">
+            <div class="loginDiv">
+                <h2>Edit Post</h2>
+                <form action="">
+        
+                    <label for="title">Title :</label>
+                    <input id="title" type="title">
+        
+                    <label for="body">Body :</label>
+                    <textarea name="" id="body"></textarea>
+        
+                    <label for="image">Image :</label>
+                    <input id="image" type="file">
+        
+                </form>
+                <button type="button" id="btn">Edit Post</button>
+            </div>
+            
+        </div>
+    </div>
+    
+    <script src="./main.js"></script>
+</body>
+</html>
